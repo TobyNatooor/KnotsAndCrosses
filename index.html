@@ -4,39 +4,34 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="app.js"></script>
   <title>Knots and Crosses</title>
-  <link>
 </head>
 
 <body>
-  <h2>Tic Tac Toe</h2>
-  <p>Next turn:</p>
-  <p id="theTurn"> X</p>
+  <h1 class="headline">Tic Tac Toe</h1>
+
+  <div class="sameLine">
+    <p id="element1">Next turn:</p>
+    <p id="theTurn"> X</p>
+  </div>
 
   <div onclick="clearEverything();">Click here to restart</div>
 
+  <div class="table">
+      <div class="test" id="0-0" onclick="myClick(0, 0)"></div>
+      <div class="test" id="1-0" onclick="myClick(1, 0)"></div>
+      <div class="test" id="2-0" onclick="myClick(2, 0)"></div>
+      <div class="test" id="0-1" onclick="myClick(0, 1)"></div>
+      <div class="test" id="1-1" onclick="myClick(1, 1)"></div>
+      <div class="test" id="2-1" onclick="myClick(2, 1)"></div>
+      <div class="test" id="0-2" onclick="myClick(0, 2)"></div>
+      <div class="test" id="1-2" onclick="myClick(1, 2)"></div>
+      <div class="test" id="2-2" onclick="myClick(2, 2)"></div>
+  </div>
 
-  <div class="test" id="0-0" onclick="myClick(0, 0)"></div>
-  <div class="test" id="1-0" onclick="myClick(1, 0)"></div>
-  <div class="test" id="2-0" onclick="myClick(2, 0)"></div>
+    <h1 id="winner"></h1>
 
-  <br><br><br><br><br><br><br>
-
-  <div class="test" id="0-1" onclick="myClick(0, 1)"></div>
-  <div class="test" id="1-1" onclick="myClick(1, 1)"></div>
-  <div class="test" id="2-1" onclick="myClick(2, 1)"></div>
-
-  <br><br><br><br><br><br><br>
-
-  <div class="test" id="0-2" onclick="myClick(0, 2)"></div>
-  <div class="test" id="1-2" onclick="myClick(1, 2)"></div>
-  <div class="test" id="2-2" onclick="myClick(2, 2)"></div>
-
-  <br><br><br><br><br><br><br>
-
-  <h1 id="winner"> </h1>
-
-  <script src="app.js"></script>
 </body>
 
 </html>

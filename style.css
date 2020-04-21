@@ -1,14 +1,43 @@
+
+* {
+    background-color: #eeeeee;
+    text-align: center;
+}
+
+.headline {
+    background-color: cornflowerblue;
+    padding: 20px 10px;
+}
+
 .test {
     width: 100px;
     height: 100px;
     cursor: pointer;
-    margin: 5px;
+    margin: 2px;
     float: left;
     border: 3px solid black;
-    border-radius: 5%;
-    
+    border-radius: 3%;
 }
+
+.table {
+    max-width: 330px;
+    max-height: 330px;
+    margin: auto;
+}
+
 img {
     max-width: 100px;
     max-height: 100px;
 }
+
+.sameLine {
+    display: flex;
+    justify-content: center;
+}
+
+#winner {
+padding: 20px 10px;
+margin: 350px auto;
+background-color: cornflowerblue;
+}
+
