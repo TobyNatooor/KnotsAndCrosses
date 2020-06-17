@@ -7,6 +7,13 @@
 .headline {
     background-color: cornflowerblue;
     padding: 20px 10px;
+    animation-name: theTitle;
+    animation-duration: 2s;
+}
+
+@keyframes theTitle {
+    0%{transform: translateY(-200px);}
+    100%{transform: translateY(0px);}
 }
 
 .test {
@@ -14,15 +21,25 @@
     height: 100px;
     cursor: pointer;
     margin: 2px;
-    float: left;
     border: 3px solid black;
     border-radius: 3%;
 }
 
-.table {
-    max-width: 330px;
-    max-height: 330px;
+.myTable {
+    height: 330px;
+    width: 330px;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation-name: myTableAnimation;
+    animation-duration: 5s;
+}
+
+@keyframes myTableAnimation {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100%{opacity: 1;}
 }
 
 img {
@@ -33,11 +50,66 @@ img {
 .sameLine {
     display: flex;
     justify-content: center;
+    animation-name: sameLineAnimation;
+    animation-duration: 3s;
+}
+
+@keyframes sameLineAnimation {
+    0%{transform: translatex(-800px);}
+    100%{transform: translatex(0px);}
+}
+
+.theRestart {
+    border: 1px solid black;
+    margin-top: 15px;
+    padding: 10px 10px;
+    display: inline-block;
+
+    animation-name: theRestart;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+    transition-property: transform;
+    transition-duration: 1s;
+}
+ 
+.theRestart:hover {
+    transform: rotateY(180deg);
+}
+
+@keyframes theRestart {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 #winner {
-padding: 20px 10px;
-margin: 350px auto;
-background-color: cornflowerblue;
+    background-color: cornflowerblue;
+    position: absolute;
+    width: 100%;
+    top: 320px;
+    font-size: 1cm;
+
+    animation-name: Winner;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+
+    transition-property: transform;
+    transition-duration: 1s;
 }
+
+@keyframes Winner {
+    0% {transform: translateY(400px); opacity: 0;}
+    50% {transform: translateY(300px); opacity: 0;}
+    100% {transform: translateY(0px); opacity: 1;}
+}
+
+
+
+
+/* name duration timing-function delay iteration-count direction fill-mode */
+
+
+
+
 

@@ -7,7 +7,7 @@ let board = [
 ]
 
 function clearEverything() {
-    document.getElementById("winner").innerText = "";
+    document.getElementById("winner").innerText = " ";
     for (let x = 0; x < 3; x++) {
         for (let y = 0; y < 3; y++) {
             board[x][y] = " ";
@@ -32,6 +32,7 @@ function myClick(x, y) {
     displayBoard()
     checkWinner()
 }
+
 function displayBoard() {
     for (let x = 0; x < 3; x++) {
         for (let y = 0; y < 3; y++) {
@@ -44,11 +45,12 @@ function displayBoard() {
                 document.getElementById(id).innerHTML = "<img src = 'Kryds.png'></img>";
             }
             else {
-                document.getElementById(id).innerHTML = " ";
+                document.getElementById(id).innerHTML = "";
             }
         }
     }
 }
+
 function checkWinner() {
     if (
         board[0][0] == "X" && board[0][1] == "X" && board[0][2] == "X" ||
