@@ -11,7 +11,7 @@
     font-size: clamp(4rem, 5vw, 6rem);
     padding: clamp(1rem, 3vw, 3rem) 0;
     animation-name: theTitle;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 @keyframes theTitle {
@@ -26,7 +26,7 @@
 #theTurn {
     font-size: 3rem;
     animation-name: theTurn;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 @keyframes theTurn {
@@ -52,7 +52,7 @@ img {
     grid-gap: 3%;
     grid-template-columns: 1fr 1fr 1fr;
     animation-name: myTableAnimation;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 .tableSquare {
@@ -106,27 +106,8 @@ img {
 
 #winner {
     background-color: cornflowerblue;
+    position: absolute;
     width: 100%;
     font-size: 4.5rem;
     transform: translateY(-40vh);
-    animation-name: Winner;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    transition-property: transform;
-    transition-duration: 1s;
-}
-
-@keyframes Winner {
-    0% {
-        transform: translateY(400px);
-        opacity: 0;
-    }
-    50% {
-        transform: translateY(300px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
 }
