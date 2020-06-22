@@ -8,8 +8,8 @@
 
 .heading {
     background-color: cornflowerblue;
-    font-size: clamp(4rem, 5vw, 6rem);
-    padding: clamp(1rem, 3vw, 3rem) 0;
+    font-size: clamp(4rem, 5vw, 4rem);
+    padding: clamp(0.5rem, 3vw, 1rem) 0;
     animation-name: theTitle;
     animation-duration: 1s;
 }
@@ -46,7 +46,7 @@ img {
 }
 
 .myTable {
-    width: min(480px, 80%);
+    width: min(360px, 80%);
     margin: auto;
     display: grid;
     grid-gap: 3%;
