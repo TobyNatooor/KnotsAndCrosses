@@ -4,35 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css" type="text/css">
-  <script src="app.js"></script>
-  <title>Knots and Crosses</title>
+  <script src="app.js" defer></script>
+  <title>Tic Tac Toe</title>
 </head>
 
 <body>
-  <h1 class="headline">Tic Tac Toe</h1>
 
-  <div class="sameLine">
-    <p id="element1">Next turn:</p>
-    <p id="theTurn"> X</p>
-  </div>
-
+  <h1 class="heading">Tic Tac Toe</h1>
+  <p id="theTurn">Next turn: X</p>
   <div class="myTable">
-    <div class="test" id="0-0" onclick="myClick(0, 0)"></div>
-    <div class="test" id="1-0" onclick="myClick(1, 0)"></div>
-    <div class="test" id="2-0" onclick="myClick(2, 0)"></div>
-    <div class="test" id="0-1" onclick="myClick(0, 1)"></div>
-    <div class="test" id="1-1" onclick="myClick(1, 1)"></div>
-    <div class="test" id="2-1" onclick="myClick(2, 1)"></div>
-    <div class="test" id="0-2" onclick="myClick(0, 2)"></div>
-    <div class="test" id="1-2" onclick="myClick(1, 2)"></div>
-    <div class="test" id="2-2" onclick="myClick(2, 2)"></div>
+    <div class="tableSquare" id="0-0" onclick="myClick(0, 0)"></div>
+    <div class="tableSquare" id="1-0" onclick="myClick(1, 0)"></div>
+    <div class="tableSquare" id="2-0" onclick="myClick(2, 0)"></div>
+    <div class="tableSquare" id="0-1" onclick="myClick(0, 1)"></div>
+    <div class="tableSquare" id="1-1" onclick="myClick(1, 1)"></div>
+    <div class="tableSquare" id="2-1" onclick="myClick(2, 1)"></div>
+    <div class="tableSquare" id="0-2" onclick="myClick(0, 2)"></div>
+    <div class="tableSquare" id="1-2" onclick="myClick(1, 2)"></div>
+    <div class="tableSquare" id="2-2" onclick="myClick(2, 2)"></div>
   </div>
-
   <div id="winner"></div>
-
-  <div class="theRestart" onclick="clearEverything();">Click here to restart</div>
-
-
+  <div id="theRestart" onclick="clearEverything()">Click here to restart</div>
 
 </body>
 

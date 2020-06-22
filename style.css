@@ -1,87 +1,97 @@
-
-* {
-    background-color: #eeeeee;
+*, * ::before, * ::after {
     text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
 }
 
-.headline {
+.heading {
     background-color: cornflowerblue;
-    padding: 20px 10px;
+    font-size: clamp(4rem, 5vw, 6rem);
+    padding: clamp(1rem, 3vw, 3rem) 0;
     animation-name: theTitle;
     animation-duration: 2s;
 }
 
-@keyframes theTitle {
-    0%{transform: translateY(-200px);}
-    100%{transform: translateY(0px);}
+/* @keyframes theTitle {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+} */
+
+#theTurn {
+    font-size: 3rem;
 }
 
-.test {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
-    margin: 2px;
+img {
+    width: 100%;
+    height: 100%;
     border: 3px solid black;
     border-radius: 3%;
 }
 
 .myTable {
-    height: 330px;
-    width: 330px;
+    width: min(480px, 80%);
     margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 3%;
+    grid-template-columns: 1fr 1fr 1fr;
     animation-name: myTableAnimation;
     animation-duration: 5s;
 }
 
-@keyframes myTableAnimation {
-    0% {opacity: 0;}
-    50% {opacity: 0;}
-    100%{opacity: 1;}
+.tableSquare {
+    width: 100%;
+    padding-bottom: 97%;
+    cursor: pointer;
+    border: 3px solid black;
+    border-radius: 3%;
 }
 
-img {
-    max-width: 100px;
-    max-height: 100px;
-}
+/* @keyframes myTableAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
 
-.sameLine {
-    display: flex;
-    justify-content: center;
-    animation-name: sameLineAnimation;
-    animation-duration: 3s;
-}
-
-@keyframes sameLineAnimation {
-    0%{transform: translatex(-800px);}
-    100%{transform: translatex(0px);}
-}
-
-.theRestart {
+#theRestart {
+    font-size: clamp(2rem, 5vw, 5rem);
     border: 1px solid black;
-    margin-top: 15px;
+    margin: 5rem 0 0 0;
     padding: 10px 10px;
     display: inline-block;
-
     animation-name: theRestart;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-
     transition-property: transform;
     transition-duration: 1s;
 }
- 
+
 .theRestart:hover {
     transform: rotateY(180deg);
 }
 
-@keyframes theRestart {
-    0%{opacity: 0;}
-    50%{opacity: 0;}
-    100%{opacity: 1;}
-}
+/* @keyframes theRestart {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
 
 #winner {
     background-color: cornflowerblue;
@@ -89,27 +99,24 @@ img {
     width: 100%;
     top: 320px;
     font-size: 1cm;
-
     animation-name: Winner;
     animation-duration: 4s;
     animation-fill-mode: both;
-
     transition-property: transform;
     transition-duration: 1s;
 }
 
-@keyframes Winner {
-    0% {transform: translateY(400px); opacity: 0;}
-    50% {transform: translateY(300px); opacity: 0;}
-    100% {transform: translateY(0px); opacity: 1;}
-}
-
-
-
-
-/* name duration timing-function delay iteration-count direction fill-mode */
-
-
-
-
-
+/* @keyframes Winner {
+    0% {
+        transform: translateY(400px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+} */
