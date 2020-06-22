@@ -1,7 +1,7 @@
 
 let winner = document.querySelector("#winner")
 let theTurn = document.querySelector('#theTurn')
-
+let theRestart = document.querySelector('#theRestart')
 let nextTurn = 'X';
 let board = [
     ['', '', ''],
@@ -59,20 +59,5 @@ function checkWinner() {
         winner.innerText = "O wins!"
     }
 }
-function clearEverything() {
-    winner.innerText = "";
-    for (let x = 0; x < 3; x++) {
-        for (let y = 0; y < 3; y++) {
-            board[x][y] = "";
-            let id = x + "-" + y;
-            let block = document.getElementById(id)
-            if (block.children.length > 0) {
-                block.removeChild(block.childNodes[0]);
-                block.style.border = "3px solid black"
-                block.style.borderRadius = "3%"
-            }
-            console.log(block.children)
-        }
-    }
-    displayBoard();
-}
+
+theRestart.addEventListener('click', () => window.location.reload())

@@ -14,17 +14,28 @@
     animation-duration: 2s;
 }
 
-/* @keyframes theTitle {
+@keyframes theTitle {
     0% {
         transform: translateY(-200px);
     }
     100% {
         transform: translateY(0px);
     }
-} */
+}
 
 #theTurn {
     font-size: 3rem;
+    animation-name: theTurn;
+    animation-duration: 3s;
+}
+
+@keyframes theTurn {
+    0% {
+        transform: translateX(-600%);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 img {
@@ -41,7 +52,7 @@ img {
     grid-gap: 3%;
     grid-template-columns: 1fr 1fr 1fr;
     animation-name: myTableAnimation;
-    animation-duration: 5s;
+    animation-duration: 2s;
 }
 
 .tableSquare {
@@ -52,7 +63,7 @@ img {
     border-radius: 3%;
 }
 
-/* @keyframes myTableAnimation {
+@keyframes myTableAnimation {
     0% {
         opacity: 0;
     }
@@ -62,16 +73,16 @@ img {
     100% {
         opacity: 1;
     }
-} */
+}
 
 #theRestart {
     font-size: clamp(2rem, 5vw, 5rem);
     border: 1px solid black;
-    margin: 5rem 0 0 0;
+    margin: 3rem 0 0 0;
     padding: 10px 10px;
     display: inline-block;
     animation-name: theRestart;
-    animation-duration: 5s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     transition-property: transform;
     transition-duration: 1s;
@@ -81,7 +92,7 @@ img {
     transform: rotateY(180deg);
 }
 
-/* @keyframes theRestart {
+@keyframes theRestart {
     0% {
         opacity: 0;
     }
@@ -91,14 +102,13 @@ img {
     100% {
         opacity: 1;
     }
-} */
+}
 
 #winner {
     background-color: cornflowerblue;
-    position: absolute;
     width: 100%;
-    top: 320px;
-    font-size: 1cm;
+    font-size: 4.5rem;
+    transform: translateY(-40vh);
     animation-name: Winner;
     animation-duration: 4s;
     animation-fill-mode: both;
@@ -106,7 +116,7 @@ img {
     transition-duration: 1s;
 }
 
-/* @keyframes Winner {
+@keyframes Winner {
     0% {
         transform: translateY(400px);
         opacity: 0;
@@ -119,4 +129,4 @@ img {
         transform: translateY(0px);
         opacity: 1;
     }
-} */
+}
